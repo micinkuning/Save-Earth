@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'El Messiri', sans-serif;
+
+}
+#hero{
+  background: linear-gradient(rgba(0,0,0,0.1),#1D8348 
+),url("./istockphoto-942483984-612x612.jpg");
+  
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+.logo{
+  width:125px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.deskripsi{
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+}
+.deskripsi h1{
+  font-size: 80px;
+}
+.deskripsi p{
+  font-size: 30px;
+}
+.heroButton{
+  text-align: center;
+  margin: 20px;
+}
+.heroButton a{
+  position: relative;
+  width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  color:white;
+  margin: 10px;
+  padding: 10px;
+  border:1px solid white;
+  z-index: 1;
+}
+.heroButton a span{
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+.heroButton a:hover{
+  color: black;
+}
+.heroButton a:hover span{
+  width: 100%;
+}
+.title{
+   text-align: center;
+  margin-bottom: 25px;
+  padding-bottom: 70px;
+}
+.title h1{
+  font-size: 40px;
+}
+.title h3{
+  font-size: 30px;
+  color: #0cd40c;
+}
+.title p{
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.featurebox{
+  width: 80%;
+  display: flex;
+text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.feature{
+  flex-basis: 50%;
+ margin: auto;
+}
+.featureimage{
+  flex-basis:50% ;
+  margin: auto;
+}
+.featureimage img{
+  width: 70%;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+.featureicon span{
+  font-size: 30px;
+  color: #02ca02;
+}
+.featureicon leaf{
+  border: 1px solid  #02ca02;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  line-height: 50px;
+}
+#environtment{
+  width: 100%;
+  background-color: whitesmoke;
+}
+.environtmentbox{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 80%;
+}
+.singleenvirontment{
+  text-align: center;
+  flex-basis: 48%;
+  margin-bottom: 20px;
+  color: white;
+  height: 270px;
+}
+.singleenvirontment img{
+  width: 100%;
+  height: 270px;
+  border-radius: 7px;
+}
+.overlay{
+  background: linear-gradient(rgba(255,255,255,0.5),#04c304);
+  height: 100%;
+  width: 100%;
+  margin-top: -270px;
+  border-radius: 7px;
+  cursor:pointer;
+  opacity: 0; 
+  position: relative;
+}
+.singleenvirontment:hover .overlay{
+  opacity: 1;
+}
+.environtmentdescription{
+  left: 10%;
+  position: relative;
+  width: 80%;
+  margin-top: -40px;
+  bottom: 0;
+  transition: bottom 1s;
+  opacity: 0%;
+}
+.singleenvirontment:hover .environtmentdescription{
+  opacity: 1;
+  bottom: 40%;
+}
+.title-text{
+   text-align: center;
+  margin-bottom: 25px;
+  padding-bottom: 70px;
+}
+.title-text p{
+  font-size: 40px;
+}
+.title-text h1{
+  font-size: 30px;
+  color: #0cd40c;
+}
+#testimonial{
+  width: 100%;
+  padding: 70px 0;
+}
+.testimonial-row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  width: 90%;
+  margin: auto;
+}
+.testimonial-col{
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 30px;
+  flex-basis: 28%;
+  box-shadow: 0 10px 20px 3px #0cd40c;
+}
+.user img{
+  width: 40px;
+  border-radius: 30px;
+}
+.user-info .fa-brands{
+  margin-left: 10px;
+  color: #4d4dff;
+  font-size: 20px;
+}
+.user-info small{
+  color: #4d4dff;
+}
+.testimonial-col span{
+  color: #4d4dff;
+}
+#footer{
+  background: whitesmoke;
+  padding: 10px 0 20px;
+}
+.footer-row{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#footer img{
+  position: absolute;
+  opacity: 0.5;
+  width: 370px;
+  left: 35%;
+}
